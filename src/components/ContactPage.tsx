@@ -42,7 +42,7 @@ export function ContactPage() {
               </p>
             </div>
 
-            <form className="bg-gray-800 p-8 rounded-lg border border-amber-600/20" netlify>
+            <form className="bg-gray-800 p-8 rounded-lg border border-amber-600/20" netlify-honeypot="bot-field" data-netlify="true">
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div>
                   <label className="block text-white mb-2">Your Name</label>
