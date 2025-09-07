@@ -1,5 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
+import smallLogo from '../assets/hoppy-dog-logo-sm.jpg';
 
 interface HeaderProps {
   currentPage: string;
@@ -12,8 +13,7 @@ export function Header({ currentPage, onPageChange }: HeaderProps) {
 
   const pages = [
     { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About Us' },
-    { id: 'contact', label: 'Contact Us' }
+    { id: 'about', label: 'About Us' }
   ];
 
   useEffect(() => {
@@ -39,10 +39,8 @@ export function Header({ currentPage, onPageChange }: HeaderProps) {
             onClick={() => onPageChange('home')}
             className="flex items-center space-x-2 cursor-pointer hover:opacity-80 transition-opacity"
           >
-            <div className="w-10 h-10 bg-amber-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold">🐕</span>
-            </div>
-            <div>
+            <img src={smallLogo} className="w-12 rounded-full" />
+            <div style={{ fontFamily: "'Original Surfer', sans-serif" }}>
               <h1 className="text-white text-xl font-bold">The Hoppy Dog</h1>
               <p className="text-amber-400 text-xs">Indoor Dog Park & Taproom</p>
             </div>

@@ -35,8 +35,8 @@ export default function App() {
       {/* Footer */}
       <footer className="bg-gray-800 border-t border-amber-600/20 py-8">
         <div className="container mx-auto px-4">
-          <div className="flex justify-between">
-            <div className="w-80">
+          <div className="flex justify-between flex-wrap">
+            <div className="w-full mb-8 md:mb-0 md:w-1/2">
               <div className="flex items-center space-x-2 mb-4">
                 <div className="w-8 h-8 bg-amber-600 rounded-full flex items-center justify-center">
                   <span className="text-white font-bold text-sm">🐕</span>
@@ -47,7 +47,7 @@ export default function App() {
                 </div>
               </div>
               <p className="text-gray-300 text-sm leading-relaxed">
-                Where your four-legged friends can play freely while you enjoy wicked good craft beer and wine in our authentic mill warehouse setting. Proudly serving the Granite State!
+                Where your four-legged friends can play freely while you enjoy wicked good craft beer and wine. Proudly serving the Granite State!
               </p>
             </div>
 
@@ -68,14 +68,6 @@ export default function App() {
                     className="text-gray-300 hover:text-amber-400 transition-colors cursor-pointer"
                   >
                     About Us
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => handlePageChange('contact')}
-                    className="text-gray-300 hover:text-amber-400 transition-colors cursor-pointer"
-                  >
-                    Contact Us
                   </button>
                 </li>
               </ul>

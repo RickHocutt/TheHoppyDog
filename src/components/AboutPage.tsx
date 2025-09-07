@@ -1,7 +1,4 @@
-import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Heart, Users, Shield, Award } from 'lucide-react';
-import founderImage from '../assets/j-t-d.jpeg';
-import sarahImage from '../assets/j-t-d.jpeg';
 import storyImage from '../assets/dog-park.jpeg';
 
 export function AboutPage() {
@@ -15,7 +12,7 @@ export function AboutPage() {
               About <span className="text-amber-400">The Hoppy Dog</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Born and raised in the Granite State, we're more than just a dog park - we're a community where New Hampshire dogs and their humans can socialize, relax, and create wicked good memories in our unique mill-inspired setting.
+              Born and raised in the Granite State, we're more than just a dog park - we're a community where New Hampshire dogs and their humans can socialize, relax, and create wicked good memories.
             </p>
           </div>
         </div>
@@ -29,7 +26,7 @@ export function AboutPage() {
               <h2 className="text-4xl font-bold text-white mb-8">Our Story</h2>
               <div className="space-y-6 text-gray-300 leading-relaxed">
                 <p>
-                  The Hoppy Dog was born from a simple observation: New Hampshire dog owners needed a place where they could enjoy quality time while their pets socialized safely, especially during those brutal North Country winters.
+                  The Hoppy Dog was born from a simple observation: New Hampshire dog owners needed a place where they could enjoy quality time while their pets socialized safely, especially during those brutal New England winters.
                 </p>
                 <p>
                   Our founders, Jim and Theresa Robinson, lifelong Granite Staters and dog lovers who saw an opportunity to create a space that serves both the four-legged and two-legged members of our community. After traveling around visiting dog parks, they realized there was a gap in the market for a premium indoor experience right here in the "Live Free or Die" state.
@@ -96,59 +93,6 @@ export function AboutPage() {
               <h3 className="text-2xl font-bold text-white mb-4">Inclusion</h3>
               <p className="text-gray-300 leading-relaxed">
                 Welcoming dogs of all sizes, breeds, and personalities in a judgment-free environment.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section className="py-20 bg-gray-850">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-6">Meet Our Granite State Team</h2>
-            <p className="text-xl text-gray-300">
-              The passionate dog lovers behind The Hoppy Dog experience
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="bg-gray-800 p-8 rounded-lg border border-amber-600/20 text-center">
-              <img
-                src={founderImage}
-                alt="Jim Robinson - Founder"
-                className="w-32 h-32 rounded-full mx-auto mb-6 object-cover"
-              />
-              <h3 className="text-2xl font-bold text-white mb-2">Jim & Theresa Robinson</h3>
-              <p className="text-amber-400 mb-4">Founder &amp; Head Brew Enthusiast</p>
-              <p className="text-gray-300 leading-relaxed">
-                Born and raised in NH, Jim's passion for craft beer and love for dogs inspired The Hoppy Dog. Jim & Theresa ensure every visit is wicked memorable, often found sampling the latest local brews and chatting with regulars about their pups.
-              </p>
-            </div>
-
-            <div className="bg-gray-800 p-8 rounded-lg border border-amber-600/20 text-center">
-              <img
-                src={sarahImage}
-                alt="Sarah Johnson - Co-Founder"
-                className="w-32 h-32 rounded-full mx-auto mb-6 object-cover"
-              />
-              <h3 className="text-2xl font-bold text-white mb-2">Sarah Johnson</h3>
-              <p className="text-amber-400 mb-4">Co-Founder &amp; Chief Dog Whisperer</p>
-              <p className="text-gray-300 leading-relaxed">
-                A UNH graduate and certified dog trainer, Sarah moved to Manchester from Portsmouth. She oversees all safety protocols and ensures our furry guests have the best experience possible in true Granite State fashion.
-              </p>
-            </div>
-
-            <div className="bg-gray-800 p-8 rounded-lg border border-amber-600/20 text-center">
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
-                alt="Alex Chen - Bar Manager"
-                className="w-32 h-32 rounded-full mx-auto mb-6 object-cover"
-              />
-              <h3 className="text-2xl font-bold text-white mb-2">Parker Robinson</h3>
-              <p className="text-amber-400 mb-4">Tapmaster &amp; Local Brew Curator</p>
-              <p className="text-gray-300 leading-relaxed">
-                Jim and Theresa's son who fell in love with New Hampshire's craft beer scene. Parker curates our wicked good selection featuring local favorites like Smuttynose, White Birch, and Stoneface Brewing.
               </p>
             </div>
           </div>

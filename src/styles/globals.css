@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -140,30 +142,35 @@
   :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
     h1 {
       font-size: var(--text-2xl);
+      font-family: "Original Surfer", sans-serif;
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
     }
 
     h2 {
       font-size: var(--text-xl);
+      font-family: "Original Surfer", sans-serif;
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
     }
 
     h3 {
       font-size: var(--text-lg);
+      font-family: "Original Surfer", sans-serif;
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
     }
 
     h4 {
       font-size: var(--text-base);
+      font-family: "Original Surfer", sans-serif;
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
     }
 
     p {
       font-size: var(--text-base);
+      font-family: "Original Surfer", sans-serif;
       font-weight: var(--font-weight-normal);
       line-height: 1.5;
     }
