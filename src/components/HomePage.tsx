@@ -15,7 +15,7 @@ export function HomePage() {
 
         <div className="relative z-10 text-center text-white max-w-5xl mx-auto px-4 mt-10">
 
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center mb-40">
             <img src={mainLogo} className="w-40 h-40 rounded-full block mr-6" />
             <h1 className="text-4xl lg:text-6xl font-bold mb-8 drop-shadow-2xl" style={{ fontFamily: "'Original Surfer', sans-serif" }}>
               Welcome to <span className="text-amber-400"> <br/> The Hoppy Dog</span>
