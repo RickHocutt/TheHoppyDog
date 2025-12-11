@@ -1,9 +1,11 @@
 import heroImage from '../assets/hero.png';
 import mainLogo from '../assets/hoppy-dog-logo.jpg';
+import SetTitle from './SetTitle';
 
 export function HomePage() {
   return (
     <div className="min-h-screen bg-gray-900">
+      <SetTitle title="Home" />
       {/* Hero Section */}
       <section className="relative min-h-screen flex">
         <div

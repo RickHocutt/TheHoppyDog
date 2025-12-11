@@ -1,19 +1,15 @@
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import smallLogo from '../assets/hoppy-dog-logo-sm.jpg';
+import { Link, NavLink } from 'react-router-dom';
 
-interface HeaderProps {
-  currentPage: string;
-  onPageChange: (page: string) => void;
-}
-
-export function Header({ currentPage, onPageChange }: HeaderProps) {
+export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   const pages = [
-    { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About Us' }
+    { to: '/home', label: 'Home' },
+    { to: '/about', label: 'About Us' }
   ];
 
   useEffect(() => {
@@ -26,6 +22,11 @@ export function Header({ currentPage, onPageChange }: HeaderProps) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const linkClass = (isActive: boolean) =>
+    `px-4 py-2 rounded-lg transition-all duration-200 font-medium cursor-pointer ${
+      isActive ? 'bg-amber-600 text-white shadow-lg' : 'text-gray-300 hover:text-amber-400 hover:bg-gray-800/50'
+    }`;
+
   return (
     <header className={`sticky top-0 z-50 transition-all duration-300 ${
       isScrolled
@@ -35,31 +36,20 @@ export function Header({ currentPage, onPageChange }: HeaderProps) {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <button
-            onClick={() => onPageChange('home')}
-            className="flex items-center space-x-2 cursor-pointer hover:opacity-80 transition-opacity"
-          >
+          <Link to="/" className="flex items-center space-x-2 cursor-pointer hover:opacity-80 transition-opacity">
             <img src={smallLogo} className="w-12 rounded-full" />
             <div style={{ fontFamily: "'Original Surfer', sans-serif" }}>
               <h1 className="text-white text-xl font-bold">The Hoppy Dog</h1>
               <p className="text-amber-400 text-xs">Indoor Dog Park & Taproom</p>
             </div>
-          </button>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {pages.map((page) => (
-              <button
-                key={page.id}
-                onClick={() => onPageChange(page.id)}
-                className={`px-4 py-2 rounded-lg transition-all duration-200 font-medium cursor-pointer ${
-                  currentPage === page.id
-                    ? 'bg-amber-600 text-white shadow-lg'
-                    : 'text-gray-300 hover:text-amber-400 hover:bg-gray-800/50'
-                }`}
-              >
+              <NavLink key={page.to} to={page.to} className={({ isActive }) => linkClass(isActive)}>
                 {page.label}
-              </button>
+              </NavLink>
             ))}
           </nav>
 
@@ -79,20 +69,16 @@ export function Header({ currentPage, onPageChange }: HeaderProps) {
           }`}>
             <nav className="flex flex-col space-y-2">
               {pages.map((page) => (
-                <button
-                  key={page.id}
-                  onClick={() => {
-                    onPageChange(page.id);
-                    setIsMenuOpen(false);
-                  }}
-                  className={`px-4 py-3 rounded-lg text-left transition-all duration-200 cursor-pointer ${
-                    currentPage === page.id
-                      ? 'bg-amber-600 text-white'
-                      : 'text-gray-300 hover:text-amber-400 hover:bg-gray-800/50'
+                <NavLink
+                  key={page.to}
+                  to={page.to}
+                  onClick={() => setIsMenuOpen(false)}
+                  className={({ isActive }) => `px-4 py-3 rounded-lg text-left transition-all duration-200 cursor-pointer ${
+                    isActive ? 'bg-amber-600 text-white' : 'text-gray-300 hover:text-amber-400 hover:bg-gray-800/50'
                   }`}
                 >
                   {page.label}
-                </button>
+                </NavLink>
               ))}
             </nav>
           </div>

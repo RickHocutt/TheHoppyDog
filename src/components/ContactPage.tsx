@@ -1,6 +1,9 @@
+import SetTitle from './SetTitle';
+
 export function ContactPage() {
   return (
     <div className="min-h-screen bg-gray-900">
+      <SetTitle title="Contact" />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-b from-gray-800 to-gray-900 py-20">
         {/* String Lights Effect */}

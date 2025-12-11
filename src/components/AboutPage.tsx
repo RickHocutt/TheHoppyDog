@@ -1,9 +1,11 @@
 import { Heart, Users, Shield, Award } from 'lucide-react';
 import storyImage from '../assets/dog-park.jpeg';
+import SetTitle from './SetTitle';
 
 export function AboutPage() {
   return (
     <div className="min-h-screen bg-gray-900">
+      <SetTitle title="About" />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-b from-gray-800 to-gray-900 py-20">
         <div className="container mx-auto px-4">
