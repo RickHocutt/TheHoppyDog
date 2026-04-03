@@ -2,7 +2,7 @@
   "name": "the-hoppy-dog",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://rickhocutt.github.io/TheHoppyDog/",
+  "homepage": "https://thehoppydog.biz/",
   "type": "module",
   "scripts": {
     "dev": "vite",

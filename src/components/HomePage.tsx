@@ -29,7 +29,7 @@ export function HomePage() {
             <p className="text-2xl lg:text-4xl font-bold mb-4">Coming Soon!</p>
 
             <p className="text-xl text-gray-200 mb-8 leading-relaxed drop-shadow-lg">
-              SouthernNew Hampshire's only indoor dog park &amp; taproom serving local craft beer and wine
+              Southern New Hampshire's only indoor dog park &amp; taproom serving local craft beer and wine
             </p>
 
             <p className="text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
