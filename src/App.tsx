@@ -61,6 +61,10 @@ export default function App() {
               <p className="text-gray-400 text-sm">
                 © 2025 The Hoppy Dog. All rights reserved. | A tail-wagging good time guaranteed! | Proudly serving New Hampshire since 2025
               </p>
+              <p className="text-gray-400 text-sm">
+                134 Hall Street, Suite H <br />
+                Concord, NH 03301
+              </p>
               <p className="text-amber-400 text-xs mt-2">
                 "Live Free or Die" - and drink wicked good beer with your best friend! 🐕
               </p>

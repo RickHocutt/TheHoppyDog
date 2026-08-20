@@ -1,6 +1,5 @@
 import heroImage from '../assets/hero.png';
 import mainLogo from '../assets/hoppy-dog-logo.jpg';
-import NeedSpace from './NeedSpace';
 import SetTitle from './SetTitle';
 
 export function HomePage() {
@@ -38,9 +37,6 @@ export function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* We're Looking for Space */}
-      <NeedSpace />
     </div>
   );
 }

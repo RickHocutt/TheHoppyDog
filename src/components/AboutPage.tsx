@@ -1,6 +1,5 @@
 import { Heart, Users, Shield, Award } from 'lucide-react';
 import storyImage from '../assets/dog-park.jpeg';
-import NeedSpace from './NeedSpace';
 import SetTitle from './SetTitle';
 
 export function AboutPage() {
@@ -47,8 +46,6 @@ export function AboutPage() {
           </div>
         </div>
       </section>
-
-      <NeedSpace />
 
       {/* Mission & Values */}
       <section className="py-20 bg-gray-900">
